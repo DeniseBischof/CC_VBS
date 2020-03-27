@@ -18,7 +18,6 @@ body
     background-color: #cccccc;
     background-position: center;
     background-repeat: repeat-x;
-    background-size: cover;
     position: relative;   
 
     image-rendering: -moz-crisp-edges;
@@ -112,7 +111,6 @@ div
     z-index: 3;
     position: relative;
     
-    right: 600px;
     width: 200px;
 }
 

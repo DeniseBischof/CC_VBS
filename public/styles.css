@@ -31,8 +31,6 @@ body
     overflow-x: hidden;
 }
 
-
-
     #layer1{
 
         background-size: cover;
@@ -143,6 +141,8 @@ div
 
 img 
 {
+    width: auto;
+    height: auto;
 
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-crisp-edges;

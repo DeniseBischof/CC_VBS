@@ -1,0 +1,182 @@
+/* @font-face 
+{
+    font-family: Pixel-Art;
+    src: url(assets/pixelart.ttf);
+} */
+
+/* @-webkit-keyframes MOVE-BG {
+    from { left: 0; }
+    to { left: -100px; }
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+
+body 
+{
+    background-image: url("assets/background.png");
+    background-color: #cccccc;
+    height: 1000px;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: relative;   
+
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    overflow: hidden;
+
+}
+
+
+
+    #layer1{
+
+        background-size: cover;
+        background-position:0 50%; 
+        height: 150%;
+        position: fixed;
+        top:0;
+        width: 100%;
+        pointer-events:none;
+
+        background: repeating-linear-gradient(
+        90deg,
+        rgba(236, 240, 241,.0),
+        rgba(236, 240, 241, 0.349),
+        rgba(236, 240, 241,.0)
+                );
+        animation: layer1 10s linear infinite alternate;
+    }
+
+    
+    #layer2{
+
+        background-size: cover;
+        background-position:0 50%;
+        height: 200%;
+        position: fixed;
+        top:0;
+        width: 100%;
+        pointer-events:none;
+
+
+        background: repeating-linear-gradient(
+        90deg,
+        rgba(236, 240, 241,.0),
+        rgba(37, 82, 27, 0.322),
+        rgba(236, 240, 241,.0)
+                );
+        animation: layer2 15s linear infinite alternate;
+    }
+
+    
+    @keyframes layer1 {
+    0% {background-position: 1000px 0;}
+    50% {background-position: 500px 0;}
+    100% {background-position: 0 0;}
+    }
+
+    @keyframes layer2 { 
+    0% {background-position: 0 0%;}
+    50% {background-position: 500px 0%;}
+    100% {background-position: 1000px 0;}
+    }
+
+/* #content { //it looks horrible...
+    background: url("assets/background.png") repeat-y;
+    height: 1000px;
+    width: 2000px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    z-index:0;
+
+    -webkit-animation-name: MOVE-BG; 
+    -webkit-animation-duration: 100s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+} */
+
+
+div 
+{
+    text-align: center;
+   
+}
+
+#audio{
+    z-index: 3;
+    position: relative;
+    
+    right: 600px;
+    width: 200px;
+}
+
+#petImg{
+    position: relative;
+    top: 500px;
+
+    width: 300px;
+    height: 300px;
+
+    z-index: 2;
+
+}
+
+#frontImg{
+
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+
+    height: 1100px;
+
+    z-index: 1;
+}
+
+img 
+{
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+h1, p, input 
+{
+    position: relative;
+    bottom: 300px;
+    z-index: 2;
+
+    font-family:'Roboto';
+}
+
+h1, p 
+{
+    position: relative;
+    color: rgb(96, 110, 130);
+    font-size:18pt;
+}
+
+
+input[type=button] 
+{
+    position: relative;
+    background-color: rgb(96, 110, 130);
+    color: rgb(31, 35, 53);
+    border: 1px solid rgb(31, 35, 53);
+    text-align: center;
+    display: inline-block;
+
+    height:40px;
+    font-size:16pt;
+}
+
+
